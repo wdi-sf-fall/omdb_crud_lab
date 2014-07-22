@@ -7,7 +7,7 @@ The next steps in this app is create a movie detail page, and an ability to save
 
 
 ##Requirements
-1. User goes to page, that has a search form field for a movie.
+1. User goes to home page that has a search form field for a movie.
 2. The search form will take the user to a search results page of movie listings.
 3. Each movie link should click into a view with detailed information about the movie.
 4. On the movie detail page, have an option to save a movie for a watch later list.
