@@ -22,5 +22,5 @@ The next steps in this app is create a movie detail page, and an ability to save
 4. Provide a watch later route, which list the movies you have saved. Each link should also take me back to a movie detail page using the above route.
 
 ##Bonus
+* Have an option to remove the movie from the watch later list
 * Try to incorporate Bootstrap, Foundation to utilize some of their components or css grids.
-
