@@ -1,13 +1,13 @@
-#OMDB API Lab - Node
+#OMDB API Lab
 
 We'll be continuing our Movie app from this morning. At first, you
 created a 2 routes, one for a search form, and one to show movie
 search results.
 
-The next steps in this app are to create a movie detail page, and an
-ability to save a movie for a *Watch later list*.
+The next steps are to:
 
-
+- create a movie detail page, and
+- add the ability to save a movie for a *Watch later list*.
 
 ##Requirements
 1. User goes to home page that has a search form for a movie.
@@ -26,7 +26,7 @@ ability to save a movie for a *Watch later list*.
    entry there is a imdbID. Have each movie link to a route like
    `/movie/tt234323`. Take the parameter from that url and make an
    additional API call to retrieve movie details related to that
-   `imdbID`
+   `imdbID`.
 
 3. The final part of this project is add some kind of "save" or "watch
    later" functionality. This can be in the form of a button or link.
@@ -40,6 +40,6 @@ ability to save a movie for a *Watch later list*.
 
 
 ##Bonus
-* Have an option to remove the movie from the watch later list
+* Have an option to remove the movie from the watch later list.
 * Style it! Incorporate Bootstrap or Foundation to utilize some of
   their components or css grids.
