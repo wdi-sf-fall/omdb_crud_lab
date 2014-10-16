@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="/style.css"></link>
   </head>
   <body>
+    <form method="POST" action="/watchlater">
+      <input type="hidden" name="id" value="<%=movieDetails.imdbID%>">
+      <input type="hidden" name="title" value="<%=movieDetails.Title%>">
+      <input type="submit" value="Watch Later">
+    </form>
     <ul>
       <% for (var key in movieDetails) { %>
       <li>

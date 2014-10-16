@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Watch Later list</title>
+    <link rel="stylesheet" href="/style.css"></link>
+  </head>
+  <body>
+    <h1>Watch Later</h1>
+    <ul>
+      <% watchLater.forEach(function (film) { %>
+      <li>
+        <span><%=film.title%></span>
+        <span><%=film.id%></span>
+        <form action="/watchlater?_method=delete" method="POST">
+          <input type="hidden" name="id" value="<%=film.id%>">
+          <input type="submit" value="delete">
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
