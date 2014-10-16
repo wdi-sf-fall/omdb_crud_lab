@@ -20,4 +20,15 @@ app.get('/search', function(req, res){
   });
 });
 
+app.get('/details/:id', function(req, res){
+  var imdbID = req.params.id;
+  var url = "http://www.omdbapi.com/?i=" + imdbID;
+  request(url, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var obj = JSON.parse(body);
+      res.render("details.ejs", {movieDetails: obj});
+    }
+  });
+});
+
 app.listen(3000);

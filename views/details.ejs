@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Details Page</title>
+  </head>
+  <body>
+    <ul>
+      <% for (var key in movieDetails) { %>
+      <li>
+        <span class="key"><%= key %></span>:
+        <span class="val"><%= movieDetails[key] %></span>
+      </li>
+      <% } %>
+    </ul>
+    <% if ("Poster" in movieDetails && movieDetails.Poster !== "N/A") { %>
+    <img src="<%=movieDetails.Poster%>">
+    <% } %>
+  </body>
+</html>

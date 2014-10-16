@@ -13,7 +13,7 @@
       <% if (film.Type === "movie") { %>
 
       <!-- Show the title and the imdbID -->
-      <li><%=film.Title%> - <%=film.imdbID%></li>
+      <li><a href="/details/<%=film.imdbID%>"><%=film.Title%></a></li>
 
       <!-- Close the `if` -->
       <% } %>
